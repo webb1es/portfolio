@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="bg-background">
             <Section className="py-4 border-t-2 border-border flex justify-between">
                 <div className="flex flex-col items-center justify-center">
-                    <p>© {currentYear} Webbies </p>
+                    <p>© {currentYear} Webbies. </p>
                 </div>
                 <Socials/>
             </Section>
