@@ -267,20 +267,19 @@ export const Techs = () => {
     return (
         <Section>
             <SectionTitle>TECHNOLOGIES</SectionTitle>
-            <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-7">
+            <div className="grid grid-cols-2 gap-4 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
                 {TECH_STACK.map((tech) => (
                     <Card key={tech.name}>
-                        <div className="group flex aspect-square select-none flex-col items-center justify-center p-2">
-                            <div className="relative w-8 h-8">
+                        <div className="group flex aspect-square select-none flex-col items-center justify-center p-4">
+                            <div className="relative w-8 h-8 sm:w-10 sm:h-10">
                                 <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
                                     {tech.icon}
                                 </div>
-                                <div
-                                    className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                     {tech.colorIcon}
                                 </div>
                             </div>
-                            <span className="mt-2 text-xs text-center">{tech.name}</span>
+                            <span className="mt-3 text-xs sm:text-sm text-center">{tech.name}</span>
                         </div>
                     </Card>
                 ))}
