@@ -2,8 +2,8 @@ import {buttonVariants} from "@/components/ui/button";
 import {cn} from "@/lib/utils";
 import Link from "next/link";
 import {Github} from "./icons/Github";
-import {Email} from "./icons/Email";
 import Linkedin from "./icons/Linkedin";
+import { Email } from "./icons/Email";
 
 const SOCIALS = [
     {
