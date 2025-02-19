@@ -1,11 +1,18 @@
+"use client";
+
 import {buttonVariants} from "@/components/ui/button";
 import TypingAnimation from "@/components/ui/typing-animation";
 import {cn} from "@/lib/utils";
 import Link from "next/link";
 import {Section} from "./Section";
 import {Socials} from "./Socials";
+import { useState } from "react";
+import { Modal } from "@/components/ui/modal";
+import { CvPreview } from "./CvPreview";
 
 export const Profile = () => {
+    const [isCvModalOpen, setIsCvModalOpen] = useState(false);
+
     return (
         <Section className="py-8 relative">
             <div className="flex items-start justify-between">
@@ -34,17 +41,21 @@ export const Profile = () => {
                 </div>
             </div>
             <div className="flex items-center mt-4 gap-4">
-                <Link
+                <button
+                    onClick={() => setIsCvModalOpen(true)}
                     className={cn(
                         buttonVariants({variant: "outline"}),
                         "bg-primary text-white w-auto h-8 px-4"
                     )}
-                    href="/webbies-cv.pdf"
                 >
                     Resume
-                </Link>
+                </button>
                 <Socials/>
             </div>
+
+            <Modal isOpen={isCvModalOpen} onClose={() => setIsCvModalOpen(false)} size="large">
+                <CvPreview onClose={() => setIsCvModalOpen(false)} />
+            </Modal>
         </Section>
     );
 };
