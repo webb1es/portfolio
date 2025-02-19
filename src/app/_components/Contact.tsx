@@ -1,9 +1,15 @@
+"use client";
+
+import { useState } from "react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Modal } from "@/components/ui/modal";
+import { ContactForm } from "./ContactForm";
 import { Section, SectionTitle } from "./Section";
 
 export const Contact = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <Section>
       <SectionTitle id="contact">Let&apos;s connect</SectionTitle>
@@ -13,16 +19,20 @@ export const Contact = () => {
             Any questions, proposals, or collaborations? Feel free to reach out.{" "}
           </p>
         </div>
-        <Link
-          href="mailto:sessoujeandedieu@gmail.com"
+        <button
+          onClick={() => setIsModalOpen(true)}
           className={cn(
             buttonVariants({ variant: "outline" }),
             "bg-primary text-white"
           )}
         >
           Say Hello
-        </Link>
+        </button>
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <ContactForm onClose={() => setIsModalOpen(false)} />
+      </Modal>
     </Section>
   );
 };
