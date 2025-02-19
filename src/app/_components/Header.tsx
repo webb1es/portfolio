@@ -6,7 +6,7 @@ export const Header = () => {
         <header className="sticky top-0 z-50 bg-background">
             <Section className="flex items-center justify-between py-2 mb-10">
                 <div className="text-primary text-xl md:text-2xl font-bold font-caption">
-                    <Link href="/">Jean de Dieu</Link>
+                    <Link href="/">Webster Muchefa</Link>
                 </div>
                 <div>
                     <nav className="flex justify-between text-xs md:text-sm font-heading">

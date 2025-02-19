@@ -33,7 +33,7 @@ export const Profile = () => {
                 </div>
                 <div className="flex items-center justify-center">
                     <img
-                        src="/me.jpeg"
+                        src="/webbies.png"
                         alt="Profile"
                         className="rounded-full max-w-24 max-h-24"
                     />
