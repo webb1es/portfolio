@@ -3,12 +3,11 @@
 import {buttonVariants} from "@/components/ui/button";
 import TypingAnimation from "@/components/ui/typing-animation";
 import {cn} from "@/lib/utils";
-import Link from "next/link";
 import {Section} from "./Section";
 import {Socials} from "./Socials";
-import { useState } from "react";
-import { Modal } from "@/components/ui/modal";
-import { CvPreview } from "./CvPreview";
+import {useState} from "react";
+import {Modal} from "@/components/ui/modal";
+import {CvPreview} from "./CvPreview";
 
 export const Profile = () => {
     const [isCvModalOpen, setIsCvModalOpen] = useState(false);
@@ -29,7 +28,7 @@ export const Profile = () => {
                     </p>
                     <span
                         className="relative mt-2 text-xs md:text-sm font-medium inline-flex items-center text-black-400 dark:text-zinc-200">
-            Philadelphia, Harare, Zimbabwe
+            Harare, Zimbabwe
           </span>
                 </div>
                 <div className="flex items-center justify-center">
@@ -54,7 +53,7 @@ export const Profile = () => {
             </div>
 
             <Modal isOpen={isCvModalOpen} onClose={() => setIsCvModalOpen(false)} size="large">
-                <CvPreview onClose={() => setIsCvModalOpen(false)} />
+                <CvPreview onClose={() => setIsCvModalOpen(false)}/>
             </Modal>
         </Section>
     );
