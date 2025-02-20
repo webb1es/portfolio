@@ -1,6 +1,7 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  distDir: 'out',
   output: 'standalone',
   images: {
     unoptimized: true,
