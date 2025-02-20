@@ -1,5 +1,5 @@
-import {MdxTableContent} from "./MdxTableContent";
+import { MdxTableContent } from "./MdxTableContent";
 
 export const components = {
-    TableContent: MdxTableContent,
+  TableContent: MdxTableContent,
 };

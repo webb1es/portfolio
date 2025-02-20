@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "avatars.githubusercontent.com",
         port: "",
-        pathname: "/u/141136058",
+        pathname: "/u/29043511",
         search: "?v=4",
       },
     ],
