@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Section } from "./Section";
 import { Socials } from "./Socials";
+import Image from 'next/image';
+
 export const Profile = () => {
   return (
     <Section className="py-8 relative">
@@ -27,10 +29,12 @@ export const Profile = () => {
           </span>
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             src="https://avatars.githubusercontent.com/u/29043511"
             alt="Profile"
-            className="rounded-full max-w-24 max-h-24"
+            width={96}
+            height={96}
+            className="rounded-full"
           />
         </div>
       </div>

@@ -33,7 +33,7 @@ export const About = () => {
       <SectionTitle id="about">About Me</SectionTitle>
       <div className="text-sm mb-4">
         <p>
-          I'm a seasoned software engineer with a passion for building scalable, efficient, and innovative solutions. My expertise in cloud computing, backend systems, and AI has allowed me to lead teams and deliver high-impact projects that solve real-world problems across web and mobile apps, insurtech, and ERPs.
+          I&apos;m a seasoned software engineer with a passion for building scalable, efficient, and innovative solutions. My expertise in cloud computing, backend systems, and AI has allowed me to lead teams and deliver high-impact projects that solve real-world problems across web and mobile apps, insurtech, and ERPs.
         </p>
       </div>
       {moreText}
