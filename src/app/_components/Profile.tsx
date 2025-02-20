@@ -7,7 +7,7 @@ import { Socials } from "./Socials";
 export const Profile = () => {
   return (
     <Section className="py-8 relative">
-      <div className="flex items-start justify-between  ">
+      <div className="flex items-start justify-between">
         {/* about */}
         <div className="space-y-1">
           <h1 className="text-md md:text-2xl font-bold font-heading">
@@ -17,18 +17,20 @@ export const Profile = () => {
             </TypingAnimation>
           </h1>
           <p className="text-muted-foreground max-w-md font-light text-xs md:text-sm">
-            a self-taught fullstack developer, specializing in building scalable
-            and efficient backend systems.
+            A tech enthusiast and Senior Software Engineer with a knack for
+            crafting scalable, secure solutions in insurtech, fintech, and
+            beyond. I thrive on solving complex problems and aligning tech
+            innovation with business goals.
           </p>
           <span className="relative mt-2 text-xs md:text-sm font-medium inline-flex items-center text-black-400 dark:text-zinc-200">
-            Lome, Togo
+            Harare, Zimbabwe
           </span>
         </div>
         <div className="flex items-center justify-center">
           <img
             src="https://avatars.githubusercontent.com/u/29043511"
             alt="Profile"
-            className=" rounded-full max-w-24 max-h-24"
+            className="rounded-full max-w-24 max-h-24"
           />
         </div>
       </div>

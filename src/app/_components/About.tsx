@@ -12,37 +12,28 @@ export const About = () => {
     >
       <div>
         <p>
-          I hold a Bachelor&apos;s degree in Mechanical Engineering from the
-          École Polytechnique de Lomé (EPL). Over the past year, I have
-          transitioned into the field of computer science, driven by my passion
-          for technology and problem-solving. I am currently pursuing a two-year
-          Master&apos;s degree in Artificial Intelligence and Big Data at the
-          Collège de Paris Supérieur, where I am further deepening my expertise
-          in cutting-edge technologies.
+          With over 7 years in the tech industry, I've honed my skills in cloud computing, backend systems, and AI. Leading teams to deliver impactful projects, I focus on crafting solutions that are both innovative and efficient.
         </p>
       </div>
       <div>
         <p>
-          When I&apos;m not coding, I spend my time listening to music, reading
-          books, working out at the gym, and playing games or enjoying
-          manga/anime.
+          My career spans web and mobile apps, insurtech, fintech, ERPs, and SaaS, where I've tackled complex challenges and optimized performance. Mentoring junior developers is a passion, as I enjoy helping others grow and succeed.
+        </p>
+      </div>
+      <div>
+        <p>
+          Outside of work, I'm often found tinkering with side projects, contributing to open-source, or hiking. I'm committed to continuous learning, always exploring new tech trends in the dynamic world of software engineering.
         </p>
       </div>
     </div>
   );
+
   return (
     <Section>
       <SectionTitle id="about">About Me</SectionTitle>
       <div className="text-sm mb-4">
         <p>
-          I&apos;m a passionate developer with a strong interest in various
-          technology fields, including web development (with a primary focus on
-          backend systems), cloud computing, data, game development, and AI.
-          I&apos;m also deeply intrigued by business entrepreneurship and the
-          intersection of technology and innovation. With over 1 year of
-          experience, I&apos;ve honed my skills through personal projects and
-          enjoy continuously learning and exploring new technologies to expand
-          my expertise.
+          I'm a seasoned software engineer with a passion for building scalable, efficient, and innovative solutions. My expertise in cloud computing, backend systems, and AI has allowed me to lead teams and deliver high-impact projects that solve real-world problems across web and mobile apps, insurtech, and ERPs.
         </p>
       </div>
       {moreText}
