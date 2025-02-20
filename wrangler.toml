@@ -1,9 +1,0 @@
-name = "portfolio"
-compatibility_date = "2024-02-20"
-
-[build]
-command = "npm run build"
-publish = ".next"
-
-[build.environment]
-NODE_VERSION = "20.11.1" 
