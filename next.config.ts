@@ -1,7 +1,7 @@
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  distDir: 'outDir',
+  distDir: 'out',
   output: 'standalone',
   images: {
     remotePatterns: [
