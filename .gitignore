@@ -18,6 +18,7 @@
 /out/
 .next
 out
+outDir
 dist
 
 # production
